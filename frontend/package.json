@@ -1,0 +1,26 @@
+{
+  "name": "voteapp-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npm run genabi && next dev -p 3001",
+    "build": "next build",
+    "export": "next build",
+    "start": "next start",
+    "genabi": "node ./scripts/genabi.mjs",
+    "ishhrunning": "node ./scripts/is-hardhat-node-running.mjs"
+  },
+  "dependencies": {
+    "ethers": "^6.13.2",
+    "idb": "^8.0.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@fhevm/mock-utils": "0.1.0",
+    "@types/node": "^24.5.2",
+    "@types/react": "19.1.13",
+    "typescript": "^5.5.4"
+  }
+}
